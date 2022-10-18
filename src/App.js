@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function App() {
   return (
-    <div>App</div>
+    <div>
+      <p>Online magazin start</p>
+      
+    </div>
+    
   )
 }
