@@ -1,11 +1,18 @@
 import React from 'react'
+import { Header } from './common/header/Header'
+import {BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
+import './App.scss'
 
 export default function App() {
   return (
-    <div>
-      <p>Online magazin start</p>
-      <h2>Go</h2>
-    </div>
+    <>
+      <Router>
+        <Header/>
+        <Switch>
+          
+        </Switch>
+      </Router> 
+    </>
     
   )
 }
