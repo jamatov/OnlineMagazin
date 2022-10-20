@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
 
-$blue : #0f3460;
+$blue : #324EF7;
 
 *{
   margin: 0;
@@ -57,6 +57,31 @@ li{
 
 .RText{
   text-align: right;
+}
+
+input, 
+button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.row{
+  width: 50%;
+}
+
+.icon-circle{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f3f5f9;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.boxShadow{
+  box-shadow: rgb(43, 52, 69 / 10%) 0 4px 16px;
 }
 
 .Xead{
@@ -151,12 +176,88 @@ li{
     justify-content: end;
   }
 
-  @media (max-width : 768px) {
-    header {
-      ul{
-        padding-top: 30px;
+  
+}
+
+@media (max-width : 768px) {
+  .close{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ff014f;
+    display: block !important;
+    font-size: 25px;
+    z-index: 9999;
+  }
+  .open{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ff014f;
+    display: block !important;
+    font-size: 25px;
+    z-index: 9999;
+  }
+
+  .open{
+    top: 18%;
+    right: 30px;
+  }
+
+  .close{
+    right: 45%;
+
+    .home-btn{
+      background: linear-gradient(145deg, #e2e8ec, #ffffff);
+      color: #ff014f;
+      border-radius: 50%;
+      padding: 0;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+
+  .nav-links-MobileMenu{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 888;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+  }
+  header {
+    
+    .link{
+      display: none;
+    }
+
+    ul{
+      padding-top: 30px;
+
+      li{
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+        line-height: 70px;
       }
     }
+  }
+  .nav-links-MobileMenu{
+    position: absolute;
+    display: block;
+    list-style-type: none;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 888;
   }
 }
 
